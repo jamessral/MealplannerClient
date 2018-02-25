@@ -1,0 +1,24 @@
+{
+    "parser": "babel-eslint",
+    "extends": ["airbnb"],
+    "plugins": [
+        "react",
+        "flowtype"
+    ],
+    "rules": {
+        "no-var": "error",
+        "prefer-const": [ "error", {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+        }],
+        "semi": ["error", "never"],
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "ignore"
+        }],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+}

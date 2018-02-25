@@ -45,6 +45,7 @@ node_modules/react-native/flow/
 node_modules/expo/flow/
 
 [options]
+all=true
 emoji=true
 
 module.system=haste

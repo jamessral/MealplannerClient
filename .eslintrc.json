@@ -1,17 +1,24 @@
 {
     "parser": "babel-eslint",
-    "extends": ["airbnb"],
+    "extends": [
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
     "plugins": [
         "react",
         "flowtype"
     ],
+    "env": {
+        "jest": true,
+        "node": true
+    },
     "rules": {
         "no-var": "error",
         "prefer-const": [ "error", {
             "destructuring": "any",
             "ignoreReadBeforeAssign": false
         }],
-        "semi": ["error", "never"],
+        "semi": ["error", "always"],
         "comma-dangle": ["error", {
             "arrays": "always-multiline",
             "objects": "always-multiline",
